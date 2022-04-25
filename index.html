@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Đoán Xem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 style="width: 80%; margin-left: 10%; text-align: center;">
+        Tìm tên người thương của bạn
+    </h1>
+    
+    <div class="all"  id="body">
+        <div class="layer" id="mask"></div>
+        <img src="A.png" alt="" onclick="wrong()">
+        <img src="B.png" alt="" onclick="wrong()">
+        <img src="C.png" alt="" onclick="wrong()">
+        <img src="D.png" alt="" onclick="wrong()">
+        <img src="E.png" alt="" onclick="wrong()">
+        <img src="F.png" alt="" onclick="wrong()">
+        <img src="G.png" alt="" onclick="wrong()">
+        <img src="H.png" alt="" onclick="wrong()">
+        <img src="I.png" alt="" onclick="wrong()">
+        <img src="J.png" alt="" onclick="wrong()">
+        <img src="K.png" alt="" onclick="wrong()">
+        <img src="L.png" alt="" onclick="wrong()">
+        <img src="M.png" alt="" onclick="wrong()">
+        <img src="N.png" alt="" onclick="right()">
+        <img src="O.png" alt="" onclick="wrong()">
+        <img src="P.png" alt="" onclick="wrong()">
+        <img src="Q.png" alt="" onclick="wrong()">
+        <img src="R.png" alt="" onclick="wrong()">
+        <img src="S.png" alt="" onclick="wrong()">
+        <img src="T.png" alt="" onclick="wrong()">
+        <img src="U.png" alt="" onclick="wrong()">
+        <img src="V.png" alt="" onclick="wrong()">
+        <img src="W.png" alt="" onclick="wrong()">
+        <img src="X.png" alt="" onclick="wrong()">
+        <img src="Y.png" alt="" onclick="wrong()">
+        <img src="Z.png" alt="" onclick="wrong()">
+    </div>
+    <div class="alert" id="warning" style="display: none;">
+        <div style="text-align: center;">Bạn chọn sai rồiiiiiiiii !!!!!!!!!</div>
+        <img src="angry.png" alt="" width="50%" style="margin-left: 35%;">
+        <div class="choice">
+            <div style="float: left; margin-right: 5%;" class="btn btn-info" onclick="replay()">Chọn Lại</div>
+            <div style="float: left;" class="btn btn-info" id="deo"  onclick="clickOver()" onmouseover="over()" onmouseleave="out()" style="display: block;">Khum thít chọn</div>
+        </div>
+    </div>
+    <div class="alert" id="love" style="display: none;">
+        <div style="text-align: center;">Hí Hí Tớ thíttttttt cậu </div>
+        <img src="funny.png" alt="" width="60%" style="margin-left: 25%;">
+        <a href="https://drive.google.com/file/d/1YyWGlW5nrm9W8_VrJJDNRqMIhj6H2ACg/view?usp=sharing"><div style="float: left; width: 60%;; margin-left: 20%;" class="btn btn-info">Hí Hí Mãi iuuuuu</div></a>
+    </div>
+
+    <script>
+        function over(){
+            document.getElementById("deo").style.display = "none";
+        }
+        function out(){
+            document.getElementById("deo").style.display = "block";
+        }
+        function clickOver(){
+                document.getElementById("deo").style.display = "none"
+        }
+        function replay(){
+            document.getElementById("warning").style.display = "none";
+            document.getElementById("mask").style.display = "none";
+        }
+        function right() {
+            document.getElementById("love").style.display = "block";
+        }
+        function wrong(){
+            document.getElementById("mask").style.display = "block";
+            document.getElementById("warning").style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
