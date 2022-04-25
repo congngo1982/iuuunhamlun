@@ -50,7 +50,7 @@
         <img src="angry.png" alt="" width="50%" style="margin-left: 35%;">
         <div class="choice">
             <div style="float: left; margin-right: 5%;" class="btn btn-info" onclick="replay()">Chọn Lại</div>
-            <div style="float: left;" class="btn btn-info" id="deo"  onclick="clickOver()" onmouseover="over()" onmouseleave="out()" style="display: block;">Khum thít chọn</div>
+            <div style="float: left;" class="btn btn-info" id="deo"  onclick="clickOver()" style="display: block;">Khum thít chọn</div>
         </div>
     </div>
     <div class="alert" id="love" style="display: none;">
@@ -75,6 +75,7 @@
         }
         function right() {
             document.getElementById("love").style.display = "block";
+            document.getElementById("mask").style.display = "block";
         }
         function wrong(){
             document.getElementById("mask").style.display = "block";
