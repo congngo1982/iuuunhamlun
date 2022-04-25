@@ -45,12 +45,12 @@
         <img src="Y.png" alt="" onclick="wrong()">
         <img src="Z.png" alt="" onclick="wrong()">
     </div>
-    <div class="alert" id="warning" style="display: none;">
+    <div class="alert" id="warning" style="display: none;" onmouseleave="out()">
         <div style="text-align: center;">Bạn chọn sai rồiiiiiiiii !!!!!!!!!</div>
         <img src="angry.png" alt="" width="50%" style="margin-left: 35%;">
         <div class="choice">
             <div style="float: left; margin-right: 5%;" class="btn btn-info" onclick="replay()">Chọn Lại</div>
-            <div style="float: left;" class="btn btn-info" id="deo"  onclick="clickOver()" onmouseleave="out()" style="display: block;">Khum thít chọn</div>
+            <div style="float: left;" class="btn btn-info" id="deo"  onclick="clickOver()" style="display: block;">Khum thít chọn</div>
         </div>
     </div>
     <div class="alert" id="love" style="display: none;">
@@ -64,7 +64,7 @@
             document.getElementById("deo").style.marginLeft = "400px";
         }
         function out(){
-            document.getElementById("deo").style.marginLeft = "0";
+            document.getElementById("deo").style.display = "block";
         }
         function clickOver(){
                 document.getElementById("deo").style.display = "none"
